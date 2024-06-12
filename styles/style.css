@@ -1,1 +1,426 @@
-/* место для вашего кода */
+
+/* header */
+
+/* menu */
+
+header {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 92px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1052px;
+    text-underline-offset: 4px;
+}
+
+.menu {   
+    width: 391.48px;
+    height: 22px;
+}
+
+.menu-link {
+    display: flex;
+    list-style-type:circle;
+    letter-spacing: 0.01em;   
+}
+
+.menu-main {
+    list-style-type: none;
+    width: 67px;
+    height: 21px;
+    line-height: 21.13px;
+}
+
+.no-line {   
+    text-decoration: none; 
+}
+
+.menu-lots {
+    width: 151px;
+    height: 21px;
+    margin: 0 32px 0 31.48px;
+}
+
+.menu-about {
+    width: 110px;
+    height: 21px;
+}
+
+/* logo-menu */
+
+.logo-menu{
+    margin: 0 185px 0 36px;   
+}
+
+.logo-black {  
+    width: 148px;
+    height: 105px;   
+}
+
+/* contacts */
+
+.contacts {
+    width: 240.52px;
+    height: 98px; 
+    line-height: 24.3px; 
+}
+
+.telephone {
+    display: block;
+    width: 240px;
+    height: 24px;
+    letter-spacing: 0.01em;    
+}
+
+.mail {
+    display: block;
+    width: 240px;
+    height: 24px;
+    letter-spacing: 0.01em;
+    margin-bottom: 1px;
+}
+
+
+/* main */
+
+
+/* overlay */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    padding: 165px 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* jambotron */
+
+.jambotron {
+    height: 757px;
+    width: 1100px;
+    background-image: url(../images/cover.jpg);
+    background-position: center;
+    background-size: cover; 
+}
+
+.jambotron-title {     
+    width: 1000px;
+    height: 355px;
+    font-size: 100px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    line-height: 115px;
+    font-weight: 700; 
+}
+
+.text-left {
+    display: block;
+    text-align: left;
+    line-height: 115px;
+}
+
+.text-center {
+    display: block;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 20px;
+}
+
+.text-right {
+    display: block;
+    text-align: right;
+    line-height: 100px;
+    margin-top: 20px;
+    margin-right: -60px;  
+}
+
+.jambotron-content {
+    display: block;
+    margin-top: 135px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.jambotron-content-text {
+    width: 637px;
+    height: 28px;
+    font-size: 22px;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-right: 79px;
+    
+}
+
+/*word-spasing*/
+
+.whitespace-08em {
+    word-spacing: 0.8em;
+}
+
+.whitespace-09em {
+    word-spacing: 0.9em;
+}
+
+/*bet*/
+
+.bet {
+    display: block;
+    width: 256px;
+    height: 51px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25.83px;
+    text-align: center;
+    text-transform: uppercase;
+    background: none;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 12px 32px 11px 31px;   
+}
+
+/* lots */
+
+.lots {
+    margin: 179px 24px 146px;
+    width: 1052px;
+    height: 692px;
+}
+  
+.lots-title {
+    width: 121px;
+    height: 47px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.96px;
+    text-align: left;
+    color: #000000;
+    margin-left:40px;
+    margin-bottom: 27px;
+    text-transform: uppercase;
+}
+  
+.lots-content {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin-bottom: 30px;
+}
+  
+.card-lots {
+    width: 334px;
+    height: 563px;
+  }
+   
+.card-lot1 {
+    background: url(../images/card-lot-01.jpg) center/cover;
+    height: 100%;
+    color: #FFFFFF;
+} 
+  
+.card-lot2 {
+    background: url(../images/card-lot-02.jpg) center/cover;
+    height: 100%;
+    color: #FFFFFF;
+ }
+  
+.card-lot3 {
+    background: url(../images/card-lot-03.jpg) center/cover;
+    height: 100%;
+    color: #FFFFFF;    
+}
+  
+.card-link {
+    text-decoration: none;
+}
+  
+.card-title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-transform: uppercase;
+    text-decoration: underline solid #FFFFFF 1px;
+    text-underline-offset: 2px;
+}
+  
+.card-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: -1px;
+}
+
+.card-text-point {
+    letter-spacing: 0.13em;
+}
+  
+.more-link {
+    width: 192px;
+    height: 23px;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-bottom: 2px;
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: 1px solid #000000;
+    line-height: 23.48px;
+}
+
+.card-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* about */
+
+.about {
+    margin: 146px 24px 180px;
+    display: flex;
+    width: 1052px;
+    height: 595px;
+    gap: 72px;
+}
+  
+.logo-column {
+    margin-top: 35px;
+}
+  
+.about-logo {
+    background-color: #000000;
+    border-radius: 240px;
+    margin-left: 47px;
+    padding: 64px 45.52px 62px 46.48px;
+}
+  
+.logo-white {
+    width: 148px;
+    height: 114px;
+}
+
+.about-column {
+    margin-top: 133px;
+}
+  
+.about-title {
+    margin-top: 3px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.96px;
+    text-transform: uppercase;
+}
+  
+.about-text {
+    margin-top: 100px;
+    flex-direction: column;
+    gap: 24px;
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/*letter-spacing*/
+
+.letter-normal {
+    letter-spacing: normal;
+}
+
+.letter01 {
+    letter-spacing: 0.01em;
+}
+
+.letter02 {
+    letter-spacing: 0.02em;
+}
+
+.letter03 {
+    letter-spacing: 0.03em;
+}
+
+.letter04 {
+    letter-spacing: 0.04em;
+}
+
+.letter3 {
+    letter-spacing: 0.3em;
+}
+
+.letter6 {
+    letter-spacing: 0.6em;
+}
+
+.letter-01 {
+    letter-spacing: -0.01em;
+}
+
+/* footer */
+
+.footer { 
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 88px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+    text-underline-offset: 4px;
+}
+
+.footer-contacts {    
+    width: 240.52px;
+    height: 98px;  
+    line-height: 24.3px;
+}
+
+.footer-telephone {
+    display: block;
+    width: 240px;
+    height: 24px;
+    letter-spacing: 0.01em;
+}
+
+.footer-mail {
+    display: block;
+    width: 240px;
+    height: 24px;
+    letter-spacing: 0.01em;
+    margin-bottom: 1px;
+}
+
+.footer-menu {
+    font-size: 18px;
+    font-weight: 400; 
+    width: 149px;
+    height: 64px;
+}
+
+.footer-menu-link {
+    list-style-type: none;
+    line-height: 21.13px;
+    text-align: center;
+}
+
+.footer-socials {
+    width: 240px;
+    height: 48px;
+}
+
+.footer-social-link {   
+    display: flex;
+    justify-content: end;
+    gap: 48px;
+    list-style: none;
+}
+  
+  .footer-social-icon {
+    width: 48px;
+    height: 48px;
+}
