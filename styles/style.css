@@ -1,56 +1,53 @@
 
 /* header */
 
-/* menu */
-
-header {
+.header {
     font-size: 18px;
     font-weight: 400;
-    margin: 92px 24px;
+    padding: 92px 24px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1052px;
-    text-underline-offset: 4px;
 }
 
-.menu {   
-    width: 391.48px;
-    height: 22px;
+/* header-menu */
+
+.header-menu {  
+    width: 100%;
+    max-width: 392px;
+    margin: 0 25px;
 }
 
-.menu-link {
+.menu-list {
     display: flex;
-    list-style-type:circle;
-    letter-spacing: 0.01em;   
-}
-
-.menu-main {
-    list-style-type: none;
-    width: 67px;
-    height: 21px;
+    flex-wrap: nowrap;
+    gap: 32px;
+    font-size: 18px;
+    white-space: nowrap;
     line-height: 21.13px;
+    letter-spacing: 0.01em;
 }
 
-.no-line {   
-    text-decoration: none; 
+.menu-list-item {
+    list-style-type:circle;
 }
 
-.menu-lots {
-    width: 151px;
-    height: 21px;
-    margin: 0 32px 0 31.48px;
+.menu-list-item--no-bullit {
+    list-style-type: none;
 }
 
-.menu-about {
-    width: 110px;
-    height: 21px;
+.menu-list-link {
+    text-underline-offset: 4px; 
 }
 
-/* logo-menu */
+.menu-list-link--active {
+    text-decoration: none;
+}
 
-.logo-menu{
-    margin: 0 185px 0 36px;   
+/* header-logo */
+
+.header-logo {
+   margin: 0 185px 0 11px;
 }
 
 .logo-black {  
@@ -58,66 +55,72 @@ header {
     height: 105px;   
 }
 
+.header__address {
+    margin-right: 28px;
+}
+
 /* contacts */
 
 .contacts {
-    width: 240.52px;
-    height: 98px; 
+    width:100%;
+    max-width: 241px;
+    font-style: normal;
     line-height: 24.3px; 
+    
 }
 
 .telephone {
-    display: block;
-    width: 240px;
-    height: 24px;
     letter-spacing: 0.01em;    
 }
 
 .mail {
-    display: block;
-    width: 240px;
-    height: 24px;
     letter-spacing: 0.01em;
-    margin-bottom: 1px;
 }
 
 
 /* main */
 
-
 /* overlay */
 
 .overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
     height: 100%;
     width: 100%;
-    padding: 165px 50px;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* jambotron */
 
 .jambotron {
-    height: 757px;
-    width: 1100px;
+    padding: 165px 50px 50px;
+    position: relative;
+    z-index: 1;
+    width:100%;
+    max-width: 1100px;
     background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
 }
 
-.jambotron-title {     
-    width: 1000px;
-    height: 355px;
+.jambotron-title { 
+    position: relative;
+    z-index: 1; 
+    width:100%;
+    max-width: 1000px;   
     font-size: 100px;
     color: #FFFFFF;
     text-transform: uppercase;
     line-height: 115px;
     font-weight: 700; 
+    
 }
 
 .text-left {
     display: block;
     text-align: left;
-    line-height: 115px;
 }
 
 .text-center {
@@ -132,11 +135,23 @@ header {
     text-align: right;
     line-height: 100px;
     margin-top: 20px;
-    margin-right: -60px;  
+}
+
+.spacing-normal {
+    letter-spacing: 30px;
+}
+
+.spacing-extended {
+    letter-spacing: 60px;
+}
+
+.spacing-none {
+    letter-spacing: normal;
 }
 
 .jambotron-content {
-    display: block;
+    position: relative;
+    z-index: 1;
     margin-top: 135px;
     display: flex;
     justify-content: right;
@@ -145,33 +160,23 @@ header {
 }
 
 .jambotron-content-text {
-    width: 637px;
-    height: 28px;
+    
     font-size: 22px;
     color: #FFFFFF;
     font-weight: 400;
     line-height: 28px;
     text-transform: uppercase;
     margin-right: 79px;
-    
+    word-spacing: 19px;
 }
 
-/*word-spasing*/
-
-.whitespace-08em {
-    word-spacing: 0.8em;
-}
-
-.whitespace-09em {
-    word-spacing: 0.9em;
-}
 
 /*bet*/
 
 .bet {
     display: block;
     width: 256px;
-    height: 51px;
+    font-family: Raleway, sans-serif;
     font-size: 22px;
     font-weight: 500;
     line-height: 25.83px;
@@ -187,13 +192,10 @@ header {
 
 .lots {
     margin: 179px 24px 146px;
-    width: 1052px;
-    height: 692px;
+    width: 1052px;    
 }
   
 .lots-title {
-    width: 121px;
-    height: 47px;
     font-size: 40px;
     font-weight: 700;
     line-height: 46.96px;
@@ -206,32 +208,39 @@ header {
   
 .lots-content {
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     list-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 }
   
 .card-lots {
     width: 334px;
-    height: 563px;
-  }
+    min-height: 563px;
+}
    
-.card-lot1 {
-    background: url(../images/card-lot-01.jpg) center/cover;
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
     height: 100%;
     color: #FFFFFF;
+    padding: 50px 40px;
+    
+}
+
+.card_type_film {
+    background: url(../images/card-lot-01.jpg) center/cover; 
 } 
   
-.card-lot2 {
-    background: url(../images/card-lot-02.jpg) center/cover;
-    height: 100%;
-    color: #FFFFFF;
- }
+.card_type_book {
+    background: url(../images/card-lot-02.jpg) center/cover; 
+}
   
-.card-lot3 {
-    background: url(../images/card-lot-03.jpg) center/cover;
-    height: 100%;
-    color: #FFFFFF;    
+.card_type_picture {
+    background: url(../images/card-lot-03.jpg) center/cover;    
 }
   
 .card-link {
@@ -239,46 +248,35 @@ header {
 }
   
 .card-title {
+    position: relative;
+    z-index: 1;
     font-size: 22px;
     font-weight: 700;
     line-height: 26.4px;
     text-transform: uppercase;
     text-decoration: underline solid #FFFFFF 1px;
-    text-underline-offset: 2px;
+    text-underline-offset: 3px;
 }
   
 .card-text {
+    position: relative;
+    z-index: 1;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    margin-top: -1px;
 }
 
-.card-text-point {
-    letter-spacing: 0.13em;
-}
-  
-.more-link {
-    width: 192px;
-    height: 23px;
+.more-link {    
     text-decoration: none;
     margin-left: 40px;
     margin-bottom: 2px;
     font-size: 20px;
     font-weight: 400;
     border-bottom: 1px solid #000000;
-    line-height: 23.48px;
+    line-height: 23.48px;    
 }
 
-.card-overlay {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 50px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 
 /* about */
 
@@ -286,7 +284,6 @@ header {
     margin: 146px 24px 180px;
     display: flex;
     width: 1052px;
-    height: 595px;
     gap: 72px;
 }
   
@@ -296,9 +293,9 @@ header {
   
 .about-logo {
     background-color: #000000;
-    border-radius: 240px;
+    border-radius: 50%;
     margin-left: 47px;
-    padding: 64px 45.52px 62px 46.48px;
+    padding: 63px 46px;
 }
   
 .logo-white {
@@ -319,48 +316,15 @@ header {
 }
   
 .about-text {
-    margin-top: 100px;
+    display: flex;
     flex-direction: column;
     gap: 24px;
-    display: flex;
+    margin-top: 100px;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
 }
 
-/*letter-spacing*/
-
-.letter-normal {
-    letter-spacing: normal;
-}
-
-.letter01 {
-    letter-spacing: 0.01em;
-}
-
-.letter02 {
-    letter-spacing: 0.02em;
-}
-
-.letter03 {
-    letter-spacing: 0.03em;
-}
-
-.letter04 {
-    letter-spacing: 0.04em;
-}
-
-.letter3 {
-    letter-spacing: 0.3em;
-}
-
-.letter6 {
-    letter-spacing: 0.6em;
-}
-
-.letter-01 {
-    letter-spacing: -0.01em;
-}
 
 /* footer */
 
@@ -371,46 +335,24 @@ header {
     font-size: 18px;
     font-weight: 400;
     line-height: 24.3px;
-    text-underline-offset: 4px;
-}
-
-.footer-contacts {    
-    width: 240.52px;
-    height: 98px;  
-    line-height: 24.3px;
-}
-
-.footer-telephone {
-    display: block;
-    width: 240px;
-    height: 24px;
-    letter-spacing: 0.01em;
-}
-
-.footer-mail {
-    display: block;
-    width: 240px;
-    height: 24px;
-    letter-spacing: 0.01em;
-    margin-bottom: 1px;
 }
 
 .footer-menu {
-    font-size: 18px;
-    font-weight: 400; 
-    width: 149px;
-    height: 64px;
+    max-width: 149px;
 }
 
-.footer-menu-link {
-    list-style-type: none;
+.footer-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    justify-content: center;
     line-height: 21.13px;
-    text-align: center;
+    letter-spacing: 0.01em;
+    list-style-type: none;
 }
 
 .footer-socials {
     width: 240px;
-    height: 48px;
 }
 
 .footer-social-link {   
